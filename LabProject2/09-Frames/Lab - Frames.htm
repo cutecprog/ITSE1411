@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!-- saved from url=(0072)http://www.austincc.edu/tmsmith/blackboard/wp/labs/09frames/09frames.htm -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<title>Lab - Frames</title>
+<link href="./Lab - Frames_files/web.css" rel="stylesheet" type="text/css">
+<link href="./Lab - Frames_files/wp.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="center">
+	<h1>Lab 9 - Frames</h1>
+	<h2>ITSE 1411 Beginning Web Page Programming</h2>
+</div>
+<hr>
+<p class="revision">Last revised: 03/12/2011</p>
+
+<p>Note: you will submit these lab files as part of <strong>Lab Project 2</strong>.</p>
+<h2>Learning Outcomes<span class="footnote">1</span></h2>
+<ul>
+	<li>Demonstrate the following (X)HTML programming skills:
+  		<ul>
+			<li>Create frames for a Web site.</li>
+			<li>Control the appearance and placement of frames.</li>
+			<li>Control the behavior of hyperlinks on a page with frames.</li>
+			<li>Use target names to specify the target for a hypertext link.</li>
+			<li>Create a web page that is viewable both by browsers that support frames and by those that do not support frames.</li>
+			<li>Change the appearance of frames.</li>
+		</ul>
+	</li>
+	<li>Demonstrate the correct use and syntax of the following (X)HTML elements:
+		<ul>
+			<li><span class="comp_dir">&lt;frameset&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;frame&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;noframes&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;base&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;iframe&gt;</span></li>
+		</ul>
+	</li>
+	<li>Demonstrate the correct use and syntax of the following frame attributes:
+  		<ul>
+			<li>Element: <span class="comp_dir">frameset</span><br>
+			Attributes: <span class="comp_dir">cols&nbsp;&nbsp;&nbsp;&nbsp;rows</span></li>
+			<li>Element: <span class="comp_dir">frame</span><br>
+			Attributes: <span class="comp_dir">frameborder&nbsp;&nbsp;&nbsp;&nbsp;id&nbsp;&nbsp;&nbsp;&nbsp;marginheight&nbsp;&nbsp;&nbsp;&nbsp;marginwidth&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;&nbsp;&nbsp;&nbsp;noresize&nbsp;&nbsp;&nbsp;&nbsp;scrolling&nbsp;&nbsp;&nbsp;&nbsp;src</span></li>
+			<li>Element: <span class="comp_dir">base</span><br>
+			Attributes: <span class="comp_dir">target</span></li>
+			<li>Element: <span class="comp_dir">iframe</span><br>
+			Attributes: <span class="comp_dir">align&nbsp;&nbsp;&nbsp;&nbsp;frameborder&nbsp;&nbsp;&nbsp;&nbsp;height&nbsp;&nbsp;&nbsp;&nbsp;longdesc&nbsp;&nbsp;&nbsp;&nbsp;marginheight&nbsp;&nbsp;&nbsp;&nbsp;marginwidth&nbsp;&nbsp;&nbsp;&nbsp;id&nbsp;&nbsp;&nbsp;&nbsp;scrolling&nbsp;&nbsp;&nbsp;&nbsp;src&nbsp;&nbsp;&nbsp;&nbsp;width</span></li>
+		</ul>
+	</li>
+</ul>
+<h2><a id="Tasks">Lab Folders &amp; Files</a></h2>
+<table>
+	<tbody><tr>
+		<td><a href="http://www.austincc.edu/tmsmith/blackboard/wp/labs/09frames/09frames.htm#Lab_1">Lab 1</a><br>
+			<strong>Folder</strong>:<br>
+			<span class="comp_type">01_frames</span><br><br>
+			<strong>Files</strong>:<br>
+			<span class="comp_type">01_frames.htm<br>
+			banner.htm<br>
+			contents.htm<br>
+			main.htm<br>
+			frameset.htm<br>
+			frame.htm<br>
+			nested_frameset.htm<br>
+			noframes_element.htm</span>
+		</td>
+		<td><a href="http://www.austincc.edu/tmsmith/blackboard/wp/labs/09frames/09frames.htm#Lab_2">Lab 2</a><br>
+			<strong>Folder</strong>:<br>
+			<span class="comp_type">02_iframe</span><br><br>
+			<strong>Files</strong>:<br>
+			<span class="comp_type">02_iframe.htm<br>
+			main.htm</span>
+		</td>
+	</tr>
+</tbody></table>
+
+<h2><a id="Labs">Lab Activities</a> (137 pts)</h2>
+<h3><a id="Lab_1">Lab 1</a> (71 pts)</h3>
+<ol class="no_top">
+	<li>(2) In the <span class="comp_dir">09-Frames</span> folder, create a subfolder and name it: <span class="comp_type">01_frames</span>, then create all the files for this lab in the <span class="comp_type">01_frames</span> folder.</li>
+	<li>(2) Right-click on each of the following four hyperlinks, then choose the <span class="comp_dir">Save Target As</span> command in the shortcut menu. Select the <span class="comp_type">01_frames</span> folder for this lab to save these files.&nbsp;
+	<a href="http://www.austincc.edu/tmsmith/blackboard/wp/labs/09frames/frameset.htm">frameset.htm</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.austincc.edu/tmsmith/blackboard/wp/labs/09frames/frame.htm">frame.htm</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.austincc.edu/tmsmith/blackboard/wp/labs/09frames/nested_frameset.htm">nested_frameset.htm</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.austincc.edu/tmsmith/blackboard/wp/labs/09frames/noframes_element.htm">noframes_element.htm</a></li>
+	<li>(2) Create <strong>four</strong> new Web page files. Save them in the
+	<span class="comp_type">01_frames</span> folder with the following filenames:<br>
+	<span class="comp_type">01_frames.htm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;banner.htm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;contents.htm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;main.htm</span></li>
+	<li>(9) Your finished documents must pass <a href="http://validator.w3.org/file-upload">W3C Validation</a>.
+		<ol class="alpha">
+			<li>(3) <span class="comp_type">01_frames.htm</span> - (X)HTML 1.0 Frameset DTD</li>
+			<li>(2) <span class="comp_type">contents.htm</span> - (X)HTML 1.0 Transitional DTD</li>
+			<li>(4) <span class="comp_type">banner.htm</span>,
+			<span class="comp_type">main.htm</span> - (X)HTML 1.1 DTD</li>
+		</ol>
+	</li>
+	<li>(2) In the <span class="comp_type">01_frames.htm</span> page, insert two <span class="comp_type">&lt;meta&gt;</span> elements to identify the author (you) and document description.</li>
+	<li>(2) In the <span class="comp_type">01_frames.htm</span> page, place your name in the page title followed by 
+	<span class="comp_type">Frames-1</span>. For example,<br>
+	<span class="comp_type">Sally Student - Frames-1</span></li>
+	<li>(2) In the <span class="comp_type">01_frames.htm</span> page, insert at 
+	least 2 comments in the document to describe the code.</li>
+	<li>(50) Specifications:
+		<ol class="alpha">
+			<li>(4) <span class="comp_type">banner.htm</span>
+				<ol>
+					<li>(2) Insert a heading level 3 for the text: <span class="comp_type">Frames Definitions</span></li>
+					<li>(2) Use an inline CSS style to center align this text.</li>
+				</ol></li>
+			<li>(11) <span class="comp_type">contents.htm</span>
+				<ol>
+					<li>(2) Create an unordered list to display the 4 definition terms as you see in <strong>Figure 1</strong>.</li>
+					<li>(2) Use an inline CSS style to make the markers not display.</li>
+					<li>(4) Create a hyperlink for each term to display the appropriate definition page in the main frame.</li>
+					<li>(3) Use the <span class="comp_type">&lt;base&gt;</span> element to set the 
+					<span class="comp_type">target</span> attribute for all the 
+					hyperlinks on the page.</li>
+				</ol>
+				</li>
+			<li>(2) <span class="comp_type">main.htm</span><br>
+					Enter the following text in a paragraph element: <span class="comp_type">Click the link in the left frame to display its definition in this frame.</span></li>
+			<li>(33) <span class="comp_type">01_frames_1.htm</span> - Frameset page that displays the three frames as you see in <strong>Figure 1</strong>.
+				<ol>
+					<li>(15) Create a frameset that includes three frames:<br> 
+						<span class="comp_type">banner.htm</span> frame (top of page)<br> 
+						<span class="comp_type">contents.htm</span> frame (left side)<br> 
+						<span class="comp_type">main.htm</span> frame (right side).</li>
+					<li>(8) Banner frame is 65 pixels high, its name is "banner", it does not allow scrolling, and does not allow the user to resize the frame.</li>
+					<li>(4) Contents frame is 200 pixels wide, and its name is "contents".</li>
+					<li>(2) Main frame's name is "main".</li>
+					<li>(4) Frameset page includes a message for users whose browser does not support frames. It displays the following message:
+					<span class="comp_type">This page uses frames, but your browser doesn't support them.</span></li>
+				</ol></li>
+		</ol>
+	</li>
+</ol>
+<p><img src="./Lab - Frames_files/image002.jpg" width="623" height="338" alt="Frames Definitions"><br>
+<strong>Figure 1</strong>.</p>
+<p><a href="http://www.austincc.edu/tmsmith/blackboard/wp/labs/09frames/09frames.htm#Labs">Back to Lab List</a></p>
+<hr>
+<h3><a id="Lab_2">Lab 2</a> (66 pts)</h3>
+<ol class="no_top">
+	<li>(2) Create a new folder and name it: <span class="comp_type">02_iframe</span>; then create all the files for this lab in this folder.</li>
+	<li>(2) Copy the following files from the <span class="comp_type">01_frames</span> folder to the 
+	<span class="comp_type">02_iframe</span> folder:<br>
+	<span class="comp_type">frameset.htm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;frame.htm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nested_frameset.htm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noframes_element.htm</span></li>
+	<li>(2) Create a Web page ((X)HTML 1.0 Transitional DTD). Save the iframe 
+	Web page as: <span class="comp_type">02_iframe.htm</span>.</li>
+	<li>(2) Create a Web page ((X)HTML 1.1 DTD). Save the Web page as: <span class="comp_type">main.htm</span>.</li>
+	<li>(7) Your finished documents must pass <a href="http://validator.w3.org/file-upload">W3C Validation</a>.
+		<ol class="alpha">
+			<li>(5) <span class="comp_type">02_iframe.htm</span> - (X)HTML 1.0 
+			Transitional DTD</li>
+			<li>(2) <span class="comp_type">main.htm</span> - (X)HTML 1.1 DTD</li>
+		</ol>
+	</li>
+	<li>(2) In the <span class="comp_type">02_iframe.htm</span> page, insert two <span class="comp_type">&lt;meta&gt;</span> elements to identify the author (you) and document description.</li>
+	<li>(2) In the <span class="comp_type">02_iframe.htm</span> page, place your name in the page title followed by <span class="comp_type">(X)HTML Frames-2</span>. For example,<br>
+	<span class="comp_type">Sally Student - (X)HTML Frames-2</span></li>
+	<li>(2) In the <span class="comp_type">02_frame.htm</span> page, insert at 
+	least 2 comments in the document to describe the code.</li>
+	<li>(45) Specifications:
+		<ol class="alpha">
+			<li>(3) <span class="comp_type">main.htm</span> Web page: Insert the text: "<span class="comp_type">Click a hyperlink above to display its definition in this frame.</span>"</li>
+			<li>(42) <span class="comp_type">02_iframe.htm</span> Web page as you see in <strong>Figure 2</strong>.
+				<ol>
+					<li>(2) Insert heading level 3 element.</li>
+					<li>(1) Enter the following text for heading level 3 
+					element: <span class="comp_type">Frames Definitions in an Inline 
+					Frame</span></li>
+					<li>(2) Use CSS embedded style to center the heading level 3 
+					element.</li>
+					<li>(4) Insert navigation bar with 4 hyperlinks separated by the 
+					vertical (pipe) character.</li>
+					<li>(30) Insert inline frame that displays frames definitions as you see in <strong>Figure 2</strong>.
+						<ol style="list-style-type:lower-alpha">
+						<li>(5) When the <span class="comp_type">02_iframe.htm</span> Web page loads into the browser, it displays the <span class="comp_type">main.htm</span> page in the iframe.</li>
+						<li>(25) The hyperlinks on the <span class="comp_type">02_iframe.htm</span> Web page will link to the following Web pages respectively 
+						and display in the inline frame:<br>
+	<span class="comp_type">frameset.htm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;frame.htm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nested_frameset.htm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noframes_element.htm</span></li>
+						</ol>
+					</li>
+					<li>(3) Use an embedded CSS style to center navigation 
+					bar and inline frame (hint: nest inline frame element within 
+					a paragraph element).</li>
+				</ol>
+			</li>
+		</ol>
+	</li>
+</ol>
+<p><img src="./Lab - Frames_files/image004.jpg" width="634" height="209" alt="iFrame"><br>
+<strong>Figure 2.</strong></p>
+<p><a href="http://www.austincc.edu/tmsmith/blackboard/wp/labs/09frames/09frames.htm#Labs">Back to Lab List</a></p>
+<hr>
+<p><span class="footnote">1</span>The Lab Activities might not include practice for all the listed Learning Outcomes.</p>
+<p><img src="./Lab - Frames_files/valid-xhtml11.png" alt="Valid XHTML 1.1" height="31" width="88"></p>
+
+
+
+</body></html>

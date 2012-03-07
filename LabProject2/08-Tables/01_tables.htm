@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<meta name="author" content="Andrea Grooms" />
+<meta name="description" content="01_tables - Andrea Grooms" />
+<title>Tables-1</title>
+<style type="text/css">
+p {
+    text-align: center;
+}
+.outer {
+    text-align: center;
+    border-width: medium;
+    border-color: black;
+    border-style: solid;
+    margin-left:auto; 
+    margin-right:auto;
+}
+.head td{
+    text-align: center;
+    background-color: yellow;
+    border-width: thin;
+    border-color: red;
+    border-style: solid;
+    width: 100%;
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+.top{
+    background-color: teal;
+    /*border-style: none;*/
+    text-align: center;
+}
+
+.left {
+    background-color: olive;
+    border-width: thin;
+    border-color: red;
+    border-style: solid;
+}
+
+.basic td{
+    border-width: thin;
+    border-color: red;
+    border-style: solid;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Figure 1 -->
+<p>Web Site Development Team - Andrea Grooms</p>
+<table class="outer">
+    <tr class="head"><td colspan="3">
+        Job Openings
+    </td></tr>
+    <tr class="top">
+        <td rowspan="3" class="left">Client</td>
+        <td>Position</td>
+        <td>Assignment</td>
+    </tr>
+    <tr class="basic">
+        <td>Coordinator</td>
+        <td>Assign tasks to content team</td>
+    </tr>
+    <tr class="basic">
+        <td>Content Specialist</td>
+        <td>Conduct a web site content analysis</td>
+    </tr>
+    <tr class="basic">
+        <td rowspan="3" class="left">Developer</td>
+        <td>Position</td>
+        <td>Assignment</td>
+    </tr>
+    <tr  class="basic">
+        <td>Coordinator</td>
+        <td>Assign tasks to content team</td>
+    </tr>
+    <tr class="basic">
+        <td>Content Specialist</td>
+        <td>Conduct a web site content analysis</td>
+    </tr>
+
+</table>
+<hr />
+</body>
+
+</html>

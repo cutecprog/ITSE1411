@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!-- saved from url=(0070)http://www.austincc.edu/tmsmith/blackboard/wp/labs/10forms/10forms.htm -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<title>Lab - Forms</title>
+<link href="./Lab - Forms_files/web.css" rel="stylesheet" type="text/css">
+<link href="./Lab - Forms_files/wp.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="center">
+	<h1>Lab 10 - Forms</h1>
+	<h2>ITSE 1411 Beginning Web Page Programming</h2>
+</div>
+<hr>
+<p class="revision">Last revised: 03/12/2011</p>
+
+<p>Note: you will submit these lab files as part of <strong>Lab Project 2</strong>.</p>
+<h2>Learning Outcomes<span class="footnote">1</span></h2>
+<ul class="no_top">
+	<li>Demonstrate the following (X)HTML programming skills:
+		<ul>
+			<li>Create a form with various form elements including:
+				<ul>
+					<li>button, checkbox, hidden, image, password, radio, reset, select, submit, text, textarea.</li>
+				</ul>
+			</li>
+			<li>Specify form properties.</li>
+			<li>Send data from a form to a CGI script on a web server.</li>
+			<li>Send form data without using a CGI script.</li>
+			<li>Enhance form elements.</li>
+		</ul>
+	</li>
+	<li>Demonstrate the correct use and syntax of the following (X)HTML elements:
+		<ul>
+			<li><span class="comp_dir">&lt;form&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;select&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt; &amp; &lt;optgroup&gt;</span> within <span class="comp_dir">&lt;select&gt;</span> element&nbsp;&nbsp;&nbsp;&nbsp;<span class="comp_dir">&lt;textarea&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;fieldset&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;legend&gt;</span> within <span class="comp_dir">&lt;fieldset&gt;</span> element</li>
+		</ul>
+	</li>
+	<li>Demonstrate the correct use and syntax of the following frame attributes:
+		<ul>
+			<li>Element: <span class="comp_dir">form</span><br>
+			Attributes: <span class="comp_dir">action&nbsp;&nbsp;&nbsp;&nbsp;enctype&nbsp;&nbsp;&nbsp;&nbsp;method</span></li>
+			<li>Element: <span class="comp_dir">input</span><br>
+			Attributes: <span class="comp_dir">type&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;&nbsp;&nbsp;&nbsp;size&nbsp;&nbsp;&nbsp;&nbsp;maxlength&nbsp;&nbsp;&nbsp;&nbsp;checked&nbsp;&nbsp;&nbsp;&nbsp;src&nbsp;&nbsp;&nbsp;&nbsp;alt</span></li>
+			<li>Element: <span class="comp_dir">button</span><br>
+			Attributes: <span class="comp_dir">name&nbsp;&nbsp;&nbsp;&nbsp;value&nbsp;&nbsp;&nbsp;&nbsp;type</span></li>
+			<li>Element: <span class="comp_dir">select</span><br>
+			Attributes: <span class="comp_dir">size&nbsp;&nbsp;&nbsp;&nbsp;multiple&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;&nbsp;&nbsp;&nbsp;size&nbsp;&nbsp;&nbsp;&nbsp;tabindex</span></li>
+			<li>Element: <span class="comp_dir">option</span><br>
+			Attributes: <span class="comp_dir">selected&nbsp;&nbsp;&nbsp;&nbsp;value</span></li>
+			<li>Element: <span class="comp_dir">optgroup</span><br>
+			Attribute: <span class="comp_dir">label</span></li>
+			<li>Element: <span class="comp_dir">textarea</span><br>
+			Attributes: <span class="comp_dir">name&nbsp;&nbsp;&nbsp;&nbsp;rows&nbsp;&nbsp;&nbsp;&nbsp;cols</span></li>
+			<li>Element: <span class="comp_dir">label</span><br>
+			Attribute: <span class="comp_dir">for</span></li>
+		</ul>
+	</li>
+</ul>
+<h2><a id="files">Lab Files</a></h2>
+<table>
+	<tbody><tr>
+		<td><a href="http://www.austincc.edu/tmsmith/blackboard/wp/labs/10forms/10forms.htm#lab_1">Lab 1</a><br>
+			File:<br>
+			<span class="comp_type">01_music_form.htm</span>
+		</td>
+		<td><a href="http://www.austincc.edu/tmsmith/blackboard/wp/labs/10forms/10forms.htm#lab_2">Lab 2</a><br>
+			File:<br>
+			<span class="comp_type">02_distance_learning.htm</span></td>
+	</tr>
+</tbody></table>
+<h2><a id="Labs">Lab Activities</a> (180 pts)</h2>
+
+<h3><a id="lab_1">Lab 1</a> (103 pts)</h3>
+<ol>
+	<li>(2) Create a new Web page shown in <strong>Figure 1</strong> below. Save the file 
+	in the <span class="comp_dir">10-Forms</span> folder with the filename: <span class="comp_type">01_music_form.htm</span></li>
+	<li>(13) General page requirements for the document:&nbsp; <span class="comp_type">01_music_form.htm</span>
+		<ol style="list-style-type:upper-alpha">
+			<li>(5) Your document must pass <a href="http://validator.w3.org/file-upload">W3C Validation</a>.</li>
+			<li>(2) Use the (X)HTML 1.1 DTD.</li>
+			<li>(2) Insert two <span class="comp_type">&lt;meta&gt;</span> elements to identify the author (you) and document description.</li>
+			<li>(2) Place your name in the page title followed by <span class="comp_type">	(X)HTML Forms-1</span>.For example,<br>
+					<span class="comp_type">Sally Student - Forms-1</span></li>
+			<li>(2) Insert multiple comments in the document to describe the code; one comment for each section of the form.</li>
+		</ol>
+	</li>
+	<li>(88) Form Specifications:
+		<ol class="alpha">
+			<li>(4) Form for entire document.</li>
+			<li>(4) Form element attributes:<span class="comp_type"><br>
+&nbsp;&nbsp; id="music_survey"<br>
+&nbsp;&nbsp; method="post"<br>
+&nbsp;&nbsp; action=""</span></li>
+			<li>(2) Use the heading 1 level element for the <span class="comp_dir">Music Survey</span> text.</li>
+		<li>(2) Use the heading 4 level for your name.</li>
+		<li>(4) Use the heading 3 level for the 4 section headings:<br>
+		<span class="comp_type">&nbsp;&nbsp; Select your favorite types of music:<br>
+		&nbsp;&nbsp;
+		Select how often you purchase music:<br>
+		&nbsp;&nbsp;
+		Select how you purchase music:<br>
+		&nbsp;&nbsp;
+		Describe how music affects your mood:</span></li>
+		<li>(6) Text boxes:
+			<ol>
+				<li>(3) Name: <span class="comp_type">name="name", size="50"</span></li>
+				<li>(3) E-mail: <span class="comp_type">name="e-mail", size="50"</span></li>
+			</ol>
+		</li>
+		<li>(15) Checkboxes:<br>
+			<ol>
+				<li>(6) Six checkbox fields.</li>
+				<li>(3) Checkbox fields contained within a 2-column by 3-row table.</li>
+				<li>(2) CSS embedded style to set cell width: 200 pixels.</li>
+				<li>(4) Checkbox field names same as their respective labels.</li>
+			</ol>
+		</li>
+		<li>(16) Radio buttons:<br>
+			<ol>
+				<li>(8) Four radio buttons in a group.</li>
+				<li>(2) Radio button fields contained in a 2-column by 2-row table.</li>
+				<li>(3) Field names: <span class="comp_type">Frequency</span></li>
+				<li>(3) Checked field: "Never"</li>
+			</ol>
+		</li>
+		<li>(14) Selection List:
+			<ol>
+				<li>(9) Create a selection list with three options.</li>
+				<li>(2) Selection list name: "Purchase Preference"</li>
+				<li>(3) Options: Music Store, Web Download, Web Purchase</li>
+			</ol>
+		</li>
+		<li>(15) Textarea:
+			<ol>
+				<li>(6) Create a textarea field.</li>
+				<li>(2) Text area name: <span class="comp_type">Music Affect</span></li>
+				<li>(4) Size: 50 columns, 4 rows</li>
+				<li>(3) Default text: <span class="comp_type">Please type how music affects your mood.</span></li>
+			</ol>
+		</li>
+		<li>(6) Submit &amp; Reset buttons:
+			<ol>
+				<li>(2) Form fields: Submit &amp; Reset</li>
+				<li>(2) Submit label: <span class="comp_type">Send</span></li>
+				<li>(2) Reset label: <span class="comp_type">Clear Form</span></li>
+			</ol>
+		</li>
+	</ol>
+	</li>
+</ol>
+<p><img alt="Music Survey" src="./Lab - Forms_files/forms1.jpg"><br>
+<strong>Figure 1</strong>.</p>
+<p><a href="http://www.austincc.edu/tmsmith/blackboard/wp/labs/10forms/10forms.htm#Labs">Back to Lab List</a></p>
+<hr>
+
+<h3><a id="lab_2">Lab 2</a> (77 pts)</h3>
+<ol>
+	<li>(2) Create a new Web page shown in <strong>Figure 2</strong> below. Save the file 
+	in the <span class="comp_dir">10-Forms</span> folder with the filename: 
+	<span class="comp_type">02_distance_learning.htm</span></li>
+	<li>(13) General page requirements for the document:&nbsp; <span class="comp_type">02_distance_learning.htm</span>
+		<ol style="list-style-type:upper-alpha">
+			<li>(5) Your document must pass <a href="http://validator.w3.org/file-upload">W3C Validation</a>.</li>
+			<li>(2) Use the (X)HTML 1.1 DTD.</li>
+			<li>(2) Insert two <span class="comp_type">&lt;meta&gt;</span> elements to identify the author (you) and document description.</li>
+			<li>(2) Place your name in the page title followed by <span class="comp_type">	(X)HTML Forms-2</span>. For example,<br>
+					<span class="comp_type">Sally Student - Forms-2</span></li>
+			<li>(2) Insert multiple comments in the document to describe the code; one comment for each section of the form.</li>
+		</ol>
+	</li>
+	<li>(62) Form Specifications:
+		<ol class="alpha">
+			<li>(4) Form for entire document.</li>
+			<li>(4) Form element attributes:<span class="comp_type"><br>
+&nbsp;&nbsp; id="distance_learning"<br>
+&nbsp;&nbsp; method="post"<br>
+&nbsp;&nbsp; action=""</span></li>
+			<li>(2) Use the heading 1 level element for the text:
+			<span class="comp_type">Distance Learning Feedback</span></li>
+		<li>(2) Use the heading 4 level for your name.</li>
+		<li>(13) Text box:
+			<ol>
+				<li>(5) Insert a text box field:</li>
+				<li>(2) Insert a text paragraph with a line break: 
+				<span class="comp_type">Enter the name of your course:</span></li>
+				<li>(2) Field name: <span class="comp_type">course_name</span></li>
+				<li>(2) Field size: 35</li>
+				<li>(2) Maximum field length: 
+				50</li>	
+			</ol>
+		</li>
+		<li>(18) Radio buttons:
+			<ol>
+				<li>(5) Insert a set of 4 radio buttons.</li>
+				<li>(2) Field names: <span class="comp_type">times_taken</span></li>
+				<li>(3) Field values: same as their respective labels.</li>
+				<li>(5) Enclose the set of radio buttons with a fieldset.</li>
+				<li>(3) Make the fieldset caption as you see in <strong>Figure 2</strong>.</li>
+			</ol>
+		</li>
+		<li>(13) Textarea:
+			<ol>
+				<li>(2) Above textarea field insert a paragraph element followed 
+				by a line break. Enter the following text for the paragraph 
+				element:<br>
+				<span class="comp_type">&nbsp;&nbsp; Please describe your experience with 
+				Distance Learning at Austin Community College.</span></li>
+				<li>(5) Insert a textarea field.</li>
+				<li>(2) Field name: <span class="comp_type">comments</span>1</li>
+				<li>(4) Field size: 63 columns, 5 rows</li>
+			</ol>
+		</li>
+		<li>(6) Submit &amp; Reset buttons:
+			<ol>
+				<li>(2) Insert the form fields: Submit &amp; Reset</li>
+				<li>(2) Submit label: <span class="comp_type">Send</span></li>
+				<li>(2) Reset label: <span class="comp_type">Clear Form</span></li>
+			</ol>
+		</li>
+	</ol>
+	</li>
+</ol>
+<p><img src="./Lab - Forms_files/forms2.jpg" alt="Distance Learning Feedback"><br>
+<strong>Figure 2</strong>.</p>
+<p><a href="http://www.austincc.edu/tmsmith/blackboard/wp/labs/10forms/10forms.htm#Labs">Back to Lab List</a></p>
+<hr>
+<p><span class="footnote">1</span>The Lab Activities might not include practice for all the listed Learning Outcomes.</p>
+<p><img src="./Lab - Forms_files/valid-xhtml11.png" alt="Valid XHTML 1.1" height="31" width="88"></p>
+
+
+
+</body></html>

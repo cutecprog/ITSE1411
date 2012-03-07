@@ -1,0 +1,4 @@
+﻿body	{background-color: #FFCC66; margin: 25px}
+table	{border-collapse: collapse; border: 2px solid #800000}
+td, th	{vertical-align:top; border: 1px #800000 solid; padding:10px;}	
+ol		{margin-top:0px}

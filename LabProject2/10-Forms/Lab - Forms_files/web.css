@@ -1,0 +1,41 @@
+﻿h1		{margin-top:0px; margin-bottom:0px}
+h2		{margin-top: 12px; margin-bottom: 0; color:#800000}
+h4		{margin-top: 6px;	margin-bottom: 0;}
+h3		{margin-top: 12px;	margin-bottom: 0;}
+hr		{height: 3px; width: 90%; background-color:#800000}
+li		{
+			font-weight: normal;
+			margin-top: 6px;
+			margin-bottom: 0px;
+}
+code 	{font-weight:bold; font-size:larger}
+img 	{border:thin #800000 solid}
+
+.center	{text-align:center}
+.right	{text-align:right}
+.left	{text-align:left}
+.revision {font-size: small; text-align:right; margin:0 0}
+.comp_dir {font-family: Arial, Helvetica, sans-serif; font-weight:bolder}
+.comp_type	{font-family: "Courier New", Courier, monospace; font-weight:bolder}
+.css_prop_value {
+	font-family: Calibri;
+	color: #FF0000;
+	font-weight: bold;
+}
+.top 	{margin-top:6px; margin-bottom:0px; font-size:small}
+.no_margin {margin-top:0px; margin-bottom:0px}
+.no_top {margin-top:0px}
+.no_bottom {margin-bottom:0px}
+.top_margin {margin-top:6px; margin-bottom:0px}
+.no_border	{border: 0px maroon solid }
+.bkgd	{ border: 1px solid #800000; background-color: #FFFFFF; font-size:small; font-weight:bold; margin:0px; padding:0px }
+.black_bkgd {background-color:black; color:black}
+.wingdings {font-family: Wingdings;}
+.small_note {font-size:.7em}
+.alpha {list-style-type:upper-alpha}
+.lower_alpha {list-style-type:lower-alpha}
+.footnote {font-size: .5em;	vertical-align: top;}
+
+
+
+
