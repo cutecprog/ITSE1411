@@ -9,7 +9,35 @@
 <style type="text/css">
 table {
     width: thick;
-    bor
+    border-color: fuchsia;
+    border-style: double;
+}
+
+td {
+    width: medium;
+    border-color: aqua;
+    border-style: dotted;
+    padding: 20px;
+}
+
+.row3 {
+    vertical-align: top;
+    height: 100px;
+}
+
+.row6 {
+    vertical-align: center;
+    height: 150px;
+}
+
+.row9 {
+    vertical-align: bottom;
+    height: 200px;
+}
+
+.top {
+    text-align: center;
+    font-weight: bold;
 }
 </style>
 </head>
@@ -29,19 +57,20 @@ Figure 1
 |__33_|__34_|__35_|__36_|
 |__37_|__38_|__39_|__40_|
 -->
-</body>
-<table>
+<table cellspacing="25px">
     <caption>Periodic Table - Andrea Grooms</caption>
-    <tr>
+    <!-- r1 -->
+    <tr class="top">
         <!-- 1 -->
-        <td>Atomic<br />#</td>
+        <td width="100px">Atomic<br />#</td>
         <!-- 2 -->
-        <td>Element</td>
+        <td width="100px">Element</td>
         <!-- 3 -->
-        <td>Atomic Weight</td>
+        <td width="200px">Atomic Weight</td>
         <!-- 4 -->
-        <td>Symbol</td>
+        <td width="200px">Symbol</td>
     </tr>
+    <!-- r2 -->
     <tr>
         <!-- 5 -->
         <td>18</td>
@@ -52,5 +81,94 @@ Figure 1
         <!-- 8 -->
         <td>Ar</td>
     </tr>
+    <!-- r3 -->
+    <tr class="row3">
+        <!-- 9 -->
+        <td>4</td>
+        <!-- 10 -->
+        <td>Beryllium</td>
+        <!-- 11 -->
+        <td>9.01218</td>
+        <!-- 12 -->
+        <td>Be</td>
+    </tr>
+    <!-- r4 -->
+    <tr>
+        <!-- 13 -->
+        <td>55</td>
+        <!-- 14 -->
+        <td>Cesium</td>
+        <!-- 15 -->
+        <td>132.9054</td>
+        <!-- 16 -->
+        <td>Cs</td>
+    </tr>
+    <!-- r5 -->
+    <tr>
+        <!-- 17 -->
+        <td>66</td>
+        <!-- 18 -->
+        <td>Dysprosium</td>
+        <!-- 19 -->
+        <td>162.5</td>
+        <!-- 20 -->
+        <td>Dy</td>
+    </tr>
+    <!-- r6 -->
+    <tr class="row6">
+        <!-- 21 -->
+        <td>168</td>
+        <!-- 22 -->
+        <td>Erbium</td>
+        <!-- 23 -->
+        <td>167.26</td>
+        <!-- 24 -->
+        <td>Er</td>
+    </tr>
+    <!-- r7 -->
+    <tr>
+        <!-- 25 -->
+        <td>9</td>
+        <!-- 26 -->
+        <td>Fluorine</td>
+        <!-- 27 -->
+        <td>18.9984</td>
+        <!-- 28 -->
+        <td>F</td>
+    </tr>
+    <!-- r8 -->
+    <tr>
+        <!-- 29 -->
+        <td>31</td>
+        <!-- 30 -->
+        <td>Gallium</td>
+        <!-- 31 -->
+        <td>69.72</td>
+        <!-- 32 -->
+        <td>Ga</td>
+    </tr>
+    <!-- r9 -->
+    <tr  class="row9">
+        <!-- 33 -->
+        <td>2</td>
+        <!-- 34 -->
+        <td>Helium</td>
+        <!-- 35 -->
+        <td>4.0026</td>
+        <!-- 36 -->
+        <td>He</td>
+    </tr>
+    <!-- r10 -->
+    <tr>
+        <!-- 37 -->
+        <td>77</td>
+        <!-- 38 -->
+        <td>Iridium</td>
+        <!-- 39 -->
+        <td>192.22</td>
+        <!-- 40 -->
+        <td>Ir</td>
+    </tr>
 </table>
+</body>
 </html>
