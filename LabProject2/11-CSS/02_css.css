@@ -1,0 +1,31 @@
+h1 {
+   font-family: Arial, Sanserif;
+   font-size: 18pt;
+   color: red;
+}
+h2 {
+   font-family: Arial, Sanserif;
+   font-size: 14pt;
+   color: red;
+}
+h3 {
+   font-family: Arial, Sanserif;
+   font-size: 14pt;
+   color: blue;
+}
+p {
+   font-family: Trebuchet MS, Sanserif;
+   font-size: 12pt;
+   color: blue;
+}
+table {
+   border: medium solid fuchsia;
+}
+tr.odd {
+   color: white;
+   background-color: gray;
+}
+td {
+   padding: 7pt;
+   border: thin solid lime;
+}
