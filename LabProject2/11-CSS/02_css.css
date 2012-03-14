@@ -8,19 +8,22 @@ h2 {
    font-size: 14pt;
    color: red;
 }
+/* Just kind of guessed on this one. */
 h3 {
    font-family: Arial, Sanserif;
    font-size: 14pt;
    color: blue;
 }
+/* Default text */
 p {
-   font-family: Trebuchet MS, Sanserif;
+   font-family: "Trebuchet MS", Sanserif;
    font-size: 12pt;
    color: blue;
 }
 table {
    border: medium solid fuchsia;
 }
+/* Since the even rows are the default they don't need a class */
 tr.odd {
    color: white;
    background-color: gray;
