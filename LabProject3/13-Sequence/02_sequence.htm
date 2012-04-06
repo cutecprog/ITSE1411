@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Andrea Grooms - Script-1</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta name="author" content="Andrea Grooms" />
+<meta name="description" content="01_script.htm as decribe in rubric." />
+
+<script type="text/javascript">
+<!--
+/* Author: Andrea Grooms
+  Version: 12.04.06
+      Lab: 12.1 Javascript
+*/
+// Prints header 3.A
+document.write("<h2>Austin Adventures Travel</h2>");
+
+// -->
+</script>
+</head>
+
+<body>
+
+<!-- 
+I didn't like using pre tag, I could have set the pre to belong to a class and
+made that class all the web page default settings (defined in a CSS file).
+However, I like separating content from backbone formatting and backbone
+formatting form style. With this approach I'm not far off from just getting
+content from a text file on the server. 
+ -->
+
+<p id="B1"></p>
+<p id="B2"></p>
+<p id="C1"></p>
+<p id="C2"></p>
+
+<!--<pre>-->
+<script type="text/javascript">
+// Prints to paragraphs B1, B2
+document.getElementById("B1").innerHTML="Fully escorted tours";
+document.getElementById("B2").innerHTML="Austin Adventures Travel";
+// document.writeln("Fully escorted tours");
+// document.writeln("Austin Adventures Travel");
+</script>
+
+<script type="text/javascript" src="01_script.js"></script>
+<!--</pre>-->
+
+</body>
+
+</html>

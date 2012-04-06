@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Andrea Grooms - Script-2</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta name="author" content="Andrea Grooms" />
+<meta name="description" content="02_script.htm as decribe in rubric." />
+
+</head>
+
+<body>
+
+<!-- 3.A -->
+<!-- 
+Note that I'm defining the text based of the rubric not Figure 2.
+-->
+<h3>HTML Paragraph Element</h3>
+<p>A programmer usually embeds JavaScript code into an HTML document using the script element. You can embed as many scripts into a single document as you like, using multiple script elements.
+</p>
+
+<!-- 3.B -->
+<h3>Embedded JavaScript Code</h3>
+<p id="B2"></p>
+
+<!-- 3.C -->
+<h3>JavaScript External Source File</h3>
+<p id="C3"></p>
+
+
+<script type="text/javascript">
+// Prints to paragraph 3B2
+document.getElementById("B2").innerHTML="Programmers use the language attribute to tell the browser to only execute a section of code if the browser supports that language and version.";
+</script>
+
+<script type="text/javascript" src="02_script.js"></script>
+
+</body>
+
+</html>

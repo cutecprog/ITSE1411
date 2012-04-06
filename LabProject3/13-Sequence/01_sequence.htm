@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Andrea Grooms - Sequence-1</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta name="author" content="Andrea Grooms" />
+<meta name="description" content="01_sequences.htm as decribe in rubric." />
+
+</head>
+
+<body>
+
+<pre id="main"></pre>
+
+<script type="text/javascript">
+<!--
+var main = document.getElementById("main"); // Simplifies code a bit
+var fahrenheit, celsius;
+var convertion = 5/9, offset = 32;
+// C and D in one line
+fahrenheit = parseFloat(window.prompt("Enter temperature in fahrenheit:", "70"));
+celsius = Math.round(convertion*(fahrenheit-offset));
+// Printing to pre block
+main.innerHTML = "Fahrenheit = "+fahrenheit+"\n";
+main.innerHTML += "Celsius = "+celsius+"\n";
+// -->
+</script>
+
+</body>
+
+</html>

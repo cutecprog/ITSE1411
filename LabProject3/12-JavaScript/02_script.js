@@ -1,0 +1,2 @@
+// Prints to paragraph 3C3
+document.getElementById("C3").innerHTML="Programmers use the src attribute of the script tag to include an external file containing JavaScript code rather than code embedded into the (X)HTML document. The external file is a text file containing JavaScript code, and whose filename ends with the extension .js. Note that although some version 3 browsers support the src attribute, it only functions reliably across platforms in the version 4 browsers.";
