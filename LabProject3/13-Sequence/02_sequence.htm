@@ -2,51 +2,66 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Andrea Grooms - Script-1</title>
+<title>Andrea Grooms - Sequence-2</title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <meta name="author" content="Andrea Grooms" />
-<meta name="description" content="01_script.htm as decribe in rubric." />
+<meta name="description" content="02_sequences.htm as decribe in rubric." />
 
-<script type="text/javascript">
-<!--
-/* Author: Andrea Grooms
-  Version: 12.04.06
-      Lab: 12.1 Javascript
-*/
-// Prints header 3.A
-document.write("<h2>Austin Adventures Travel</h2>");
-
-// -->
-</script>
 </head>
 
 <body>
+<pre id="main"></pre>
 
-<!-- 
-I didn't like using pre tag, I could have set the pre to belong to a class and
-made that class all the web page default settings (defined in a CSS file).
-However, I like separating content from backbone formatting and backbone
-formatting form style. With this approach I'm not far off from just getting
-content from a text file on the server. 
- -->
-
-<p id="B1"></p>
-<p id="B2"></p>
-<p id="C1"></p>
-<p id="C2"></p>
-
-<!--<pre>-->
 <script type="text/javascript">
-// Prints to paragraphs B1, B2
-document.getElementById("B1").innerHTML="Fully escorted tours";
-document.getElementById("B2").innerHTML="Austin Adventures Travel";
-// document.writeln("Fully escorted tours");
-// document.writeln("Austin Adventures Travel");
-</script>
+<!--
+var main = document.getElementById("main"); // Namespace
 
-<script type="text/javascript" src="01_script.js"></script>
-<!--</pre>-->
+// 3.[A-D]
+var hours_worked, regular_rate, regular_pay, overtime_rate, overtime_hours, overtime_pay, total_pay;
+var regular_hours=40, overtime_factor = 1.5;
+
+hours_worked = parseFloat(window.prompt("Number of hours worked last week", "45"));
+regular_rate = parseFloat(window.prompt("Hourly pay", "10"));
+
+// 3.E
+if (hours_worked > regular_hours) 
+{
+    // 40 * pay 
+    regular_pay = Math.round(regular_hours * 100 * regular_rate)/100;
+    // overtime
+    overtime_hours = hours_worked - regular_hours;
+    // 1.5 * pay
+    overtime_rate = Math.round(overtime_factor * 100 * regular_rate)/100;
+    // overtime * 1.5 * pay
+    overtime_pay = Math.round(overtime_hours * 100 * overtime_rate)/100;
+    // pay + overtime pay
+    total_pay = regular_pay + overtime_pay;
+} 
+else 
+{
+    // hours * pay
+    regular_pay = Math.round(regular_hours * 100 * regular_rate)/100;
+    // overtime
+    overtime_hours = 0;
+    // 1.5 * pay
+    overtime_rate = Math.round(overtime_factor * 100 * regular_rate)/100;
+    // overtime * 1.5 * pay
+    overtime_pay = 0;
+    // pay + overtime pay
+    total_pay = regular_pay;
+}
+
+main.innerHTML += 
+"Total Hours Worked: " + hours_worked + "\n" +
+"Regular Pay: " + (hours_worked-overtime_hours) + "/hours @ $"
++ regular_rate.toFixed(2) + "/hours = $" + regular_pay.toFixed(2) + "\n" +
+"Overtime Pay: " + overtime_hours + "/hours @ $" + overtime_rate.toFixed(2)
++ "/hours = $" + overtime_pay.toFixed(2) + "\n" +
+"Total Pay: $" + total_pay.toFixed(2);
+
+// -->
+</script>
 
 </body>
 
