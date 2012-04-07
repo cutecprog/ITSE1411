@@ -2,24 +2,17 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Andrea Grooms - Selection-2</title>
+<title>Andrea Grooms - Repetition-2</title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <meta name="author" content="Andrea Grooms" />
-<meta name="description" content="02_selection.htm as decribe in rubric." />
-
-</head>
-
-<body>
-<pre id="main"></pre>
-
+<meta name="description" content="02_repetition.htm as decribe in rubric." />
 <script type="text/javascript">
-<!--
-/*-----------------------------------------------------------------------------
+/*
 prompt_user()
 Continues to prompt user until they enter valid data
 Ex: prompt_user("How you you?", "Good/Bad");
------------------------------------------------------------------------------*/
+*/
 function prompt_user(question, valid)
 {
     // Removes question mark
@@ -39,36 +32,53 @@ function prompt_user(question, valid)
     }
     return prompt_user(question, valid);
 }
+</script>
+</head>
 
+<body>
+<pre id="main"></pre>
+
+<script type="text/javascript">
+<!--
 var main = document.getElementById("main"); // Namespace
-var answer_fruit, fruit_name;
-answer_fruit = prompt_user("Did you eat fruit today?","yes/no");
+var  principle, savings, interest, compound =12;
 
-if(answer_fruit == "no")
-    main.innerHTML+="You did not get your vitamin C today.\n";
-else {
-    fruit_name = prompt_user("Which fruit?","banana/grapefruit/orange/peach/pineapple");
-    main.innerHTML+="You ate ";
-    switch(fruit_name) {
-        case "banana": 
-            main.innerHTML+="1";
-            break;
-        case "grapefruit":
-            main.innerHTML+="2";
-            break;
-        case "orange":
-            main.innerHTML+="3";
-            break;
-        case "peach":
-            main.innerHTML+="4";
-            break;
-        case "pineapple":
-            main.innerHTML+="5";
-            break;
-        default: break;
-    }
-    main.innerHTML+=" mg of vitamin C today.";
+function get_data()
+{
+    principle = parseFloat(window.prompt("Enter savings amount","10000.0"));
+    interest = parseFloat(window.prompt("Enter interest rate",".08"));
 }
+
+/*
+So I didn't know how often interest rate is suppose to compound. I'm assuming
+monthly. Used the following equation.
+f(t) = P(1+r/n)^(n*t) where
+    P    = principle
+    f(t) = future value
+    r    = interest rate
+    n    = # of times per year interest in compounded
+    t    = number of years invested
+*/
+function calc_data()
+{
+    var product = 1;
+    for(i=0; i<compound; i++)
+        product *= 1+(interest/compound);
+    savings = principle * product;    
+}
+
+function display_data()
+{
+    main.innerHTML+="Principle: $"+principle+"\nInterest Rate: "+interest+" @ "+
+    compound+"\nSavings after one year: $"+(Math.round(savings*100)/100)+"\n\n";
+}
+
+while(prompt_user("Would you like to run program?","yes/no")=="yes") {
+    get_data();
+    calc_data();
+    display_data()
+}
+main.innerHTML+="End of Program\n";
 // -->
 </script>
 
