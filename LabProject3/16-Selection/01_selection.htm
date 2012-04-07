@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Andrea Grooms - Selection-1</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta name="author" content="Andrea Grooms" />
+<meta name="description" content="01_selection.htm as decribe in rubric." />
+
+</head>
+
+<body>
+
+<pre id="main"></pre>
+<hr />
+
+<script type="text/javascript">
+<!--
+var main = document.getElementById("main"); // Simplifies code a bit
+var test_score, curved_score;
+function get_score()
+{
+    return parseInt(window.prompt("Enter test score:","70"));   
+}
+function curve_score(score)
+{
+    
+    if (score<0 || score>100)
+        alert("Error: Test score must be between 0 and 100");
+    else if (score>=90)
+        score+=1;
+    else if (score>=80)
+        score+=2;
+    else if (score>=70)
+        score+=3;
+    else if (score>=60)
+        score+=4;
+    else
+        score+=5;
+    return score;
+}
+function show_scores()
+{
+    main.innerHTML+="Test Score = " +test_score+"\nCurved Score = "
+    +curved_score+"\n\n";
+}
+
+function report_grade()
+{
+    if (curved_score<0 || curved_score>100) {
+        alert("Error: Test score must be between 0 and 100");
+    } else if (curved_score>=90) {
+        main.innerHTML+="Curved Grade = A\n";
+        main.innerHTML+="To achieve an A grade for the course you will need a grade of at least (A Grade) on the next exam.\n";
+    } else if (curved_score>=80) {
+        main.innerHTML+="Curved Grade = B\n";
+        main.innerHTML+="To achieve an A grade for the course you will need a grade of at least (A Grade) on the next exam.\n";
+    } else if (curved_score>=70) {
+        main.innerHTML+="Curved Grade = C\n";
+        main.innerHTML+="To achieve a B grade for the course you will need a grade of at least (B Grade) on the next exam.\n";
+    } else if (curved_score>=60) {
+        main.innerHTML+="Curved Grade = D\n";
+        main.innerHTML+="To achieve a C grade for the course you will need a grade of at least (C Grade) on the next exam.\n";
+    } else {
+        main.innerHTML+="Curved Grade = F\n";
+        main.innerHTML+="To pass the course you will need a grade of at least (Passing Grade) on the next exam.\n";
+    }
+}
+
+test_score = get_score();
+curved_score = curve_score(test_score);
+show_scores();
+report_grade();
+main.innerHTML+="End of Program\n"
+// -->
+</script>
+
+</body>
+
+</html>
