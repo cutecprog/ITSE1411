@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Andrea Grooms - Repetition-1</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta name="author" content="Andrea Grooms" />
+<meta name="description" content="01_repetition.htm as decribe in rubric." />
+
+</head>
+
+<body>
+
+<pre id="main"></pre>
+<hr />
+
+<script type="text/javascript">
+<!--
+var main = document.getElementById("main"); // Namespace
+var tot_score = 0, avg_score = 0, num_scores = 5, score = []; // Globals
+
+function get_data()
+{
+    for(i=0; i < num_scores; i++) 
+        score[i] = parseInt(window.prompt("Please enter five test scores, one at a time.","Type the test score here."));
+}
+function avg_data()
+{
+    avg_score = 0; // Just in case this function is called twice.
+    for(i=0; i < num_scores; i++) {
+        avg_score += score[i]; // Acting as a sum variable.
+    }
+    avg_score = Math.round(avg_score/5);
+}
+function print_score()
+{
+    for(i=0; i < num_scores; i++) 
+        main.innerHTML+="Test Score "+(i+1)+" = "+score[i]+"\n";
+    main.innerHTML+="Average Test Score = "+avg_score+"\n\n";
+}
+
+get_data();
+avg_data();
+print_score();
+main.innerHTML+="End of Program";
+// -->
+</script>
+
+</body>
+
+</html>

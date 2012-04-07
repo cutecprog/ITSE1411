@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Andrea Grooms - Selection-2</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta name="author" content="Andrea Grooms" />
+<meta name="description" content="02_selection.htm as decribe in rubric." />
+
+</head>
+
+<body>
+<pre id="main"></pre>
+
+<script type="text/javascript">
+<!--
+/*-----------------------------------------------------------------------------
+prompt_user()
+Continues to prompt user until they enter valid data
+Ex: prompt_user("How you you?", "Good/Bad");
+-----------------------------------------------------------------------------*/
+function prompt_user(question, valid)
+{
+    // Removes question mark
+    if(question[question.length-1] == '?')
+        question = question.substr(0,question.length-1);
+        
+    valid = valid.toLowerCase();
+    valid_list = valid.split('/');
+    
+    // Get input (change that can cause base case)
+    ans = window.prompt(question+"("+valid+")?", valid_list[0]);
+    
+    // Check if the input was valid (base case)
+    for(i=0; i<valid_list.length; i++) {
+        if(ans == valid_list[i])
+            return ans;
+    }
+    return prompt_user(question, valid);
+}
+
+var main = document.getElementById("main"); // Namespace
+var answer_fruit, fruit_name;
+answer_fruit = prompt_user("Did you eat fruit today?","yes/no");
+
+if(answer_fruit == "no")
+    main.innerHTML+="You did not get your vitamin C today.\n";
+else {
+    fruit_name = prompt_user("Which fruit?","banana/grapefruit/orange/peach/pineapple");
+    main.innerHTML+="You ate ";
+    switch(fruit_name) {
+        case "banana": 
+            main.innerHTML+="1";
+            break;
+        case "grapefruit":
+            main.innerHTML+="2";
+            break;
+        case "orange":
+            main.innerHTML+="3";
+            break;
+        case "peach":
+            main.innerHTML+="4";
+            break;
+        case "pineapple":
+            main.innerHTML+="5";
+            break;
+        default: break;
+    }
+    main.innerHTML+=" mg of vitamin C today.";
+}
+// -->
+</script>
+
+</body>
+
+</html>
