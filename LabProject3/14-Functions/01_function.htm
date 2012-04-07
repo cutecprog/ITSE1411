@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Andrea Grooms - Function-1</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta name="author" content="Andrea Grooms" />
+<meta name="description" content="01_function.htm as decribe in rubric." />
+<script type="text/javascript">
+<!--
+function calc_property_tax() 
+{
+    var property_value, property_tax;
+    var school_tax_rate = 1.623, county_tax_rate = 0.4872;
+    property_value = parseFloat(window.prompt("Property Value:","120000"));
+    //School Tax = school_tax_rate * property_value / 100
+    //County Tax = county_tax_rate * property_value /100
+    property_tax = (property_value / 100) * (county_tax_rate + school_tax_rate);
+    return property_tax.toFixed(2);
+}
+// -->
+</script>
+</head>
+
+<body>
+
+<pre>The total propert tax is $<span id="main">0.00</span></pre>
+
+<script type="text/javascript">
+<!--
+//document.write(calc_property_tax());
+document.getElementById("main").innerHTML=calc_property_tax()
+// -->
+</script>
+
+</body>
+
+</html>

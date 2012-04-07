@@ -18,8 +18,15 @@
 var main = document.getElementById("main"); // Namespace
 
 // 3.[A-D]
-var hours_worked, regular_rate, regular_pay, overtime_rate, overtime_hours, overtime_pay, total_pay;
-var regular_hours=40, overtime_factor = 1.5;
+var hours_worked, 
+  regular_rate, 
+  regular_pay, 
+  overtime_rate, 
+  overtime_hours, 
+  overtime_pay, 
+  total_pay;
+var regular_hours=40, 
+  overtime_factor = 1.5;
 
 hours_worked = parseFloat(window.prompt("Number of hours worked last week", "45"));
 regular_rate = parseFloat(window.prompt("Hourly pay", "10"));
