@@ -2,11 +2,11 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Andrea Grooms - Sequence-2</title>
+<title>Andrea Grooms - Selection-2</title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <meta name="author" content="Andrea Grooms" />
-<meta name="description" content="02_sequences.htm as decribe in rubric." />
+<meta name="description" content="02_selection.htm as decribe in rubric." />
 
 </head>
 
@@ -15,58 +15,60 @@
 
 <script type="text/javascript">
 <!--
-var main = document.getElementById("main"); // Namespace
-
-// 3.[A-D]
-var hours_worked, 
-  regular_rate, 
-  regular_pay, 
-  overtime_rate, 
-  overtime_hours, 
-  overtime_pay, 
-  total_pay;
-var regular_hours=40, 
-  overtime_factor = 1.5;
-
-hours_worked = parseFloat(window.prompt("Number of hours worked last week", "45"));
-regular_rate = parseFloat(window.prompt("Hourly pay", "10"));
-
-// 3.E
-if (hours_worked > regular_hours) 
+/*-----------------------------------------------------------------------------
+prompt_user()
+Continues to prompt user until they enter valid data
+Ex: prompt_user("How you you?", "Good/Bad");
+-----------------------------------------------------------------------------*/
+function prompt_user(question, valid)
 {
-    // 40 * pay 
-    regular_pay = Math.round(regular_hours * 100 * regular_rate)/100;
-    // overtime
-    overtime_hours = hours_worked - regular_hours;
-    // 1.5 * pay
-    overtime_rate = Math.round(overtime_factor * 100 * regular_rate)/100;
-    // overtime * 1.5 * pay
-    overtime_pay = Math.round(overtime_hours * 100 * overtime_rate)/100;
-    // pay + overtime pay
-    total_pay = regular_pay + overtime_pay;
-} 
-else 
-{
-    // hours * pay
-    regular_pay = Math.round(regular_hours * 100 * regular_rate)/100;
-    // overtime
-    overtime_hours = 0;
-    // 1.5 * pay
-    overtime_rate = Math.round(overtime_factor * 100 * regular_rate)/100;
-    // overtime * 1.5 * pay
-    overtime_pay = 0;
-    // pay + overtime pay
-    total_pay = regular_pay;
+    // Removes question mark
+    if(question[question.length-1] == '?')
+        question = question.substr(0,question.length-1);
+        
+    valid = valid.toLowerCase();
+    valid_list = valid.split('/');
+    
+    // Get input (change that can cause base case)
+    ans = window.prompt(question+"("+valid+")?", valid_list[0]);
+    
+    // Check if the input was valid (base case)
+    for(i=0; i<valid_list.length; i++) {
+        if(ans == valid_list[i])
+            return ans;
+    }
+    return prompt_user(question, valid);
 }
 
-main.innerHTML += 
-"Total Hours Worked: " + hours_worked + "\n" +
-"Regular Pay: " + (hours_worked-overtime_hours) + "/hours @ $"
-+ regular_rate.toFixed(2) + "/hours = $" + regular_pay.toFixed(2) + "\n" +
-"Overtime Pay: " + overtime_hours + "/hours @ $" + overtime_rate.toFixed(2)
-+ "/hours = $" + overtime_pay.toFixed(2) + "\n" +
-"Total Pay: $" + total_pay.toFixed(2);
+var main = document.getElementById("main"); // Namespace
+var answer_fruit, fruit_name;
+answer_fruit = prompt_user("Did you eat fruit today?","yes/no");
 
+if(answer_fruit == "no")
+    main.innerHTML+="You did not get your vitamin C today.\n";
+else {
+    fruit_name = prompt_user("Which fruit?","banana/grapefruit/orange/peach/pineapple");
+    main.innerHTML+="You ate ";
+    switch(fruit_name) {
+        case "banana": 
+            main.innerHTML+="1";
+            break;
+        case "grapefruit":
+            main.innerHTML+="2";
+            break;
+        case "orange":
+            main.innerHTML+="3";
+            break;
+        case "peach":
+            main.innerHTML+="4";
+            break;
+        case "pineapple":
+            main.innerHTML+="5";
+            break;
+        default: break;
+    }
+    main.innerHTML+=" mg of vitamin C today.";
+}
 // -->
 </script>
 

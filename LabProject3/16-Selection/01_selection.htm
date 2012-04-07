@@ -17,16 +17,15 @@
 
 <script type="text/javascript">
 <!--
-var main = document.getElementById("main"); // Simplifies code a bit
-var test_score, curved_score;
+var main = document.getElementById("main"); // Namespace
+var test_score, curved_score; // Global variables
 function get_score()
 {
     return parseInt(window.prompt("Enter test score:","70"));   
 }
 function curve_score(score)
 {
-    
-    if (score<0 || score>100)
+    if (score<0 || score>100) // Test for valid data
         alert("Error: Test score must be between 0 and 100");
     else if (score>=90)
         score+=1;
@@ -48,7 +47,7 @@ function show_scores()
 
 function report_grade()
 {
-    if (curved_score<0 || curved_score>100) {
+    if (curved_score<0 || curved_score>100) { // Test for valid data
         alert("Error: Test score must be between 0 and 100");
     } else if (curved_score>=90) {
         main.innerHTML+="Curved Grade = A\n";
@@ -72,7 +71,7 @@ test_score = get_score();
 curved_score = curve_score(test_score);
 show_scores();
 report_grade();
-main.innerHTML+="End of Program\n"
+main.innerHTML+="End of Program\n" // Took this out of the function.
 // -->
 </script>
 
